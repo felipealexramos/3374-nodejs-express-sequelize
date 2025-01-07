@@ -7,7 +7,6 @@ class PessoaController extends Controller {
   constructor() {
     super(pessoaServices);
   }
-
 }
 
 module.exports = PessoaController;
