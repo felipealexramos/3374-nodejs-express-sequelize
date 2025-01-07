@@ -18,6 +18,16 @@ module.exports = {
       data_inicio: {
         type: Sequelize.DATEONLY
       },
+      doscente_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'pessoas', key: 'id' } // Apesar do nome da propriedade ser model, o valor é o nome da tabela.
+      },
+      categoria_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'categorias', key: 'id' } 
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
