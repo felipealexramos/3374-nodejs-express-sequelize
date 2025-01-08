@@ -18,7 +18,7 @@ module.exports = {
       data_inicio: {
         type: Sequelize.DATEONLY
       },
-      doscente_id: {
+      docente_id: {
         allowNull: false,
         type: Sequelize.INTEGER,
         references: { model: 'pessoas', key: 'id' } // Apesar do nome da propriedade ser model, o valor é o nome da tabela.
